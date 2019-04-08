@@ -1,0 +1,295 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 9px;
+  
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        #navbar ul li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+          
+            align-self: center;
+        }
+
+a {
+    text-decoration: none;
+    color: #eee8dc;
+    font-style: italic;
+}
+#description{
+    height:400px;
+    background-color:white;
+    width:100%;
+    
+    position:relative;
+    margin-top:800px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:30px;
+    
+}
+#profile-link{
+    font-size:small;
+}
+
+#projects {
+    background-color: black;
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    #projects h3 {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 20px;
+        color: #c1cdc1;
+        font-style: italic;
+    }
+
+.project-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.project-tile {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.project-pic {
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid lightblue;
+}
+
+#project-caption {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    font-weight: bold;
+    border: 2px solid #e3874f;
+}
+
+#one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:300px) {
+    #one {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        margin: 100px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    #two {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        margin: 100px;
+    }
+}
+
+#footer {
+    background-color: #c1cdc1;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color:white;
+    position: relative;
+    left: 0;
+    
+    bottom:-350px;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 800px;
+    background-image:url("images/tea2.jpg");
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+}
+#intro {
+   
+    color:white;
+    height:250px;
+    width:100%;
+    text-align:center;
+    padding:20px;
+    position:absolute;
+    top:200px;
+   
+}
+.show {
+    margin-left: center;
+    border: 2px solid #e3874f;
+    background-color: #f05833;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 15px 0px #808080;
+}
+
+    .show:hover {
+        font-size: 18px;
+    }
+
+#contact-me {
+    width: 100%;
+    height: 300px;
+    background-color:white;
+  
+}
+
+
+#icongroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 35px;
+}
+
+#icongroup {
+  
+    border-radius: 8px;
+    width: 95%;
+    margin-left: 28px;
+    padding-bottom: 30px;
+   
+}
+
+.contact-details {
+    border-radius: 60%;
+    color: black;
+    border: 2px solid #0e4d6c;
+    padding: 13px;
+    text-align:center;
+}
+
+    .contact-details:hover {
+        animation: shake 0.5s;
+    }
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+#mail{
+    width:80%;
+    background-color:white;
+    text-align:center;
+    margin:0 auto;
+}
+#cheader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    algn-self: center;
+    font-weight: bold;
+    padding: 30px;
+    color: black;
+    font-style: italic;
+}
